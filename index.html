@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>11 Position</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="div-one">
+        <header>
+        <h1>CSS Positioning: Drop Down Menus</h1>
+        <p><code class="code">position: relative</code> and <code class="code">position: absolute</code></p>
+</div>
+        <nav class="site-nav">
+            <ul class="site-links">
+                <li><a href="" class="site-link">Home</a></li>
+                <li><a href="" class="site-link">About </a></li>
+                <li class="has-dropdown">
+                    <a href="" class="site-link">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="" class="dropdown-link">Widgets</a></li>
+                        <li><a href="" class="dropdown-link">Gadgets</a></li>
+                        <li><a href="" class="dropdown-link">Gizmos</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="site-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+         <p>The parent list item needs <code class="code">position: relative</code> so that the child submenu can be positioned with <code class="code">position: absolute</code> relative to it - not relative to the entire page. </p>
+
+            <p>The submenu (a nested <code class="code">ul</code> inside one of the <code class="code">li</code> elements) is hidden by default with <code class="code">display: none</code>. When the user hovers over the parent list item, the submenu is shown with <code class="code">display: block</code>. </p>
+            <p>The key concept: <code class="code">position: absolute</code> places an element relative to its nearest ancestor that has <code class="code">position: relative</code>. Without that ancestor, it positions relative to the page - which is almost never what you want. </p>
+    </main>
+
+    <footer>
+        <p>This is my footer nav</p>
+    </footer>
+    </body>
+</html>
